@@ -1,0 +1,1 @@
+"[\n    \n    {{each blog_posts as article sort by blog_date DESC }}\n    {{article.toJSON(2, true) }}\n    {{if {article._length} > {article._num}  }}, {{ end-if}}\n    \n    {{end-each}}\n\n]"
